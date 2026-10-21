@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#fdfaf5" name="theme-color"/>
+<meta content="CRAN ENSENADA: sabores auténticos, cranberry fresco e inspiración para disfrutar de la naturaleza en tu mesa." name="description"/>
+<title>CRAN ENSENADA | Cranberry fresco, 100% natural</title>
+<link href="img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Marcellus&amp;display=swap" rel="stylesheet"/>
+<link href="styles/styles.css" rel="stylesheet"/><link href="styles/tienda.css" rel="stylesheet"/><link href="styles/inventario.css" rel="stylesheet"/><link href="styles/contenido.css" rel="stylesheet"/><link href="styles/cuenta.css" rel="stylesheet"/><link href="styles/vistas.css" rel="stylesheet"/>
+<script defer="" src="js/script.js"></script><script defer="" src="js/cuenta.js"></script><script defer="" src="js/inventario-core.js"></script><script defer="" src="js/tienda.js"></script>
+<link href="styles/revista.css" rel="stylesheet"/><script defer="True" src="js/articulos-data.js"></script><script defer="True" src="js/articulos-store.js"></script><script defer="True" src="js/articulos-inicio.js"></script></head>
+<body>
+<a class="skip-link" href="#principal">Saltar al contenido principal</a>
+<!-- navbar -->
+<header class="site-header" id="inicio">
+<div class="header-inner container-wide">
+<a aria-label="CRAN ENSENADA, ir al inicio" class="brand" href="index.html">
+<svg aria-hidden="true" class="brand-symbol" fill="none" viewbox="0 0 64 64">
+<circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3.2"></circle>
+<path d="M10 43.5h44L39.9 22 33 32 26.5 19 10 43.5Z" fill="currentColor"></path>
+<path d="m25 21 5 8-3.8-1.8-3.5 2.2L25 21ZM40 23l5.4 8.5-4.8-2-4.3 2.1L40 23Z" fill="#fff"></path>
+<path d="M11 45h42" stroke="currentColor" stroke-linecap="round" stroke-width="2.4"></path>
+</svg>
+<span class="brand-wordmark"><span>CRAN</span><span>ENSENADA</span></span>
+</a>
+<nav aria-label="Navegación principal" class="main-nav" id="primary-navigation">
+<a href="html/blog.html">Blog</a>
+<a href="html/recetas.html">Recetas</a>
+<a href="html/noticias.html">Noticias</a>
+<a href="html/nosotros.html">Sobre Nosotros</a>
+<a href="html/productos.html">Nuestros Productos</a><a class="ce-admin-nav" data-ce-admin-only="" href="html/reportes.html">Reportes de ventas</a><a class="ce-admin-nav" data-ce-admin-only="" href="html/inventario.html">Inventario</a>
+</nav>
+<div class="header-actions"><details class="ce-admin-menu" data-ce-admin-only="">
+  <summary aria-label="Abrir herramientas de administración">Administración <svg class="ce-admin-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="ce-admin-menu-panel">
+    <a href="html/inventario.html">Inventario</a>
+    <a href="html/reportes.html">Reportes de ventas</a>
+  </div>
+</details>
+<button class="ce-account-trigger" type="button" data-ce-account aria-label="Abrir mi cuenta: iniciar sesión o registrarse" title="Mi cuenta"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.7" stroke="currentColor" stroke-width="1.7"/><path d="M4.7 20c.4-4.1 3.2-6.4 7.3-6.4s6.9 2.3 7.3 6.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="ce-account-label">Mi cuenta</span></button><a aria-label="Ir al carro" class="ce-cart-link" href="html/carro.html"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M3 8h18l-2 13H5L3 8Zm5 0V6a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg> Carro <span class="ce-cart-count" data-ce-cart-count="">0</span></a>
+</div>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<!-- Selector de vistas visible en todas las páginas (demostración) -->
+<section class="ce-mode-strip" aria-label="Vista del sitio web">
+  <div class="ce-mode-strip__inner">
+    <div class="ce-mode-strip__label"><span class="ce-mode-strip__dot" aria-hidden="true"></span><span>Modo de visualización</span></div>
+    <div class="ce-mode-switch" role="group" aria-label="Elegir entre vista de cliente y administrador">
+      <button class="ce-mode-choice" type="button" data-ce-set-mode="cliente" aria-pressed="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c0-3.7 2.5-6 7-6s7 2.3 7 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Vista de cliente
+      </button>
+      <button class="ce-mode-choice" type="button" data-ce-set-mode="administrador" aria-pressed="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><rect x="4.5" y="5" width="15" height="15" rx="2.7" stroke="currentColor" stroke-width="1.8"/><path d="M9 5V3.5M15 5V3.5M8 11h8M8 15h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></svg>
+        Vista de administrador
+      </button>
+    </div>
+    <span class="ce-mode-strip__note">Modo demostración · Sin inicio de sesión real</span>
+  </div>
+</section>
+
+<main id="principal">
+<!-- portada -->
+<section aria-labelledby="hero-title" class="hero">
+<div aria-label="Desayuno con yogur, cranberries, jugo rojo y tostadas" class="hero-photo" role="img"></div>
+<div class="hero-shade"></div>
+<div class="hero-content container-wide">
+<div class="hero-copy">
+<p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> El poder natural del cranberry <span class="eyebrow-line"></span></p>
+<h1 id="hero-title"><span class="text-cranberry">CRANBERRY</span><span>FRESCO</span><span>100% NATURAL</span></h1>
+<p class="hero-description">Sabores auténticos, ingredientes naturales y todo el bienestar del cranberry, directo de la naturaleza a tu mesa.</p>
+<a class="btn btn-primary btn-hero" href="html/productos.html">Conoce nuestros productos <svg aria-hidden="true" class="arrow-icon" fill="none" viewbox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg></a>
+</div>
+</div>
+</section>
+<section aria-label="Lo que nos caracteriza" class="benefits container-wide">
+<article class="benefit">
+<span aria-hidden="true" class="benefit-icon"><svg fill="none" viewbox="0 0 48 48"><path d="M34 8C20 10 12 17 12 30c0 6 5 10 11 8 13-4 15-18 15-30l-4 0Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path><path d="M14 36 31 18M23 27l-1-7M23 27l8 1" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></span>
+<div><h2>100% Natural</h2><p>Ingredientes de origen natural.</p></div>
+</article>
+<article class="benefit">
+<span aria-hidden="true" class="benefit-icon"><svg fill="none" viewbox="0 0 48 48"><path d="M19 7h10M21 7v15L11 39c-1 2 1 3 3 3h20c2 0 4-1 3-3L27 22V7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M16 33h16" stroke="currentColor" stroke-width="2"></path></svg></span>
+<div><h2>Sin preservantes</h2><p>Disfruta un sabor puro y auténtico.</p></div>
+</article>
+<article class="benefit">
+<span aria-hidden="true" class="benefit-icon"><svg fill="none" viewbox="0 0 48 48"><path d="m24 6 4.8 3 5.6-.1 2.5 5 5 2.6-.2 5.6 3 4.8-3 4.8.2 5.6-5 2.6-2.5 5-5.6-.2-4.8 3-4.8-3-5.6.2-2.6-5-5-2.6.2-5.6-3-4.8 3-4.8-.2-5.6 5-2.6 2.6-5 5.6.1L24 6Z" stroke="currentColor" stroke-linejoin="round" stroke-width="2" transform="translate(3 2) scale(.82)"></path><path d="m18 25 4.5 4.5L31 20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span>
+<div><h2>Calidad premium</h2><p>Cranberry seleccionado de la más alta calidad.</p></div>
+</article>
+</section>
+<section aria-labelledby="essence-title" class="essence-section section-space container-wide" id="nosotros">
+<div class="essence-image-wrap"><img alt="Cranberries maduros en ramas, con paisaje natural al fondo" loading="lazy" src="img/cranberries-landscape.webp"/></div>
+<div class="essence-copy">
+<p class="eyebrow eyebrow-centered"><span class="eyebrow-line"></span> Nuestra esencia <span class="eyebrow-line"></span></p>
+<h2 class="section-title" id="essence-title">Más que un fruto,<br/><span>es bienestar natural</span></h2>
+<p>En <strong>CRAN ENSENADA</strong> compartimos lo mejor del cranberry con productos saludables, deliciosos y elaborados con un profundo respeto por la naturaleza.</p>
+<a class="text-link" href="html/nosotros.html">Conoce nuestra historia <span aria-hidden="true">↗</span></a>
+</div>
+</section>
+<!-- video -->
+<section aria-labelledby="brand-film-title" class="brand-film section-space" id="productos">
+<div class="container-wide brand-film-layout">
+<div class="brand-film-copy">
+<p class="eyebrow brand-film-eyebrow"><span class="eyebrow-line"></span> Nuestra esencia en imágenes</p>
+<h2 class="brand-film-title" id="brand-film-title">Una historia que <span>se saborea.</span></h2>
+<p class="brand-film-lead">Desde los paisajes de Ensenada hasta tu mesa. Descubre las manos, la naturaleza y la dedicación detrás de cada frasco de CRAN ENSENADA.</p>
+<div aria-label="Acerca del video" class="brand-film-details">
+<span><span aria-hidden="true" class="brand-film-tiny-dot"></span> Ensenada · Sur de Chile</span>
+<span>Video promocional · 49 segundos</span>
+</div>
+<a class="btn btn-primary brand-film-cta" href="html/productos.html">Conoce nuestros productos
+              <svg aria-hidden="true" class="arrow-icon" fill="none" viewbox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></svg>
+</a>
+</div>
+<div class="brand-film-visual">
+<div class="brand-film-frame" id="brand-film-frame">
+<video aria-label="Video promocional de CRAN ENSENADA: cranberry, cosecha artesanal y mermelada" class="brand-film-video" id="brand-film-video" playsinline="" poster="img/cran-promocional-poster.webp" preload="none">
+<source src="img/cran-promocional.mp4" type="video/mp4"/>
+                Tu navegador no admite videos HTML5.
+              </video>
+<button aria-label="Reproducir el video promocional con sonido" class="brand-film-play" id="brand-film-play" type="button">
+<span aria-hidden="true" class="brand-film-play-icon">
+<svg fill="none" viewbox="0 0 24 24"><path d="m9 5 10 7-10 7V5Z" fill="currentColor"></path></svg>
+</span>
+<span>Ver nuestro video</span>
+</button>
+<span aria-hidden="true" class="brand-film-length">00:49 <span class="brand-film-length-dot"></span> CRAN ENSENADA</span>
+</div>
+<div class="brand-film-footnote"><span aria-hidden="true" class="brand-film-footnote-mark">✳</span><span>Un vistazo a lo que nos inspira.</span><span class="brand-film-footnote-signature">ORIGEN · NATURALEZA · SABOR</span></div>
+</div>
+</div>
+</section>
+<!-- recetas -->
+<section aria-labelledby="recipes-title" class="recipes-section section-space container-wide" id="recetas">
+<div class="recipe-feature">
+<div class="recipe-feature-photo"><img alt="Yogur cremoso servido con granola y salsa de cranberry" loading="lazy" src="img/cranberry-yogurt.webp"/></div>
+<div class="recipe-feature-content"><p class="eyebrow">Inspiración en tu mesa</p><h2 class="section-title" id="recipes-title">Pequeñas recetas,<br/><span>grandes momentos.</span></h2><p>Dale un giro especial a tus mañanas con preparaciones simples, coloridas y llenas de sabor.</p><a class="btn btn-primary" href="html/recetas.html">Ver recetas <span aria-hidden="true">↗</span></a></div>
+</div>
+</section>
+<!-- blog -->
+<section aria-labelledby="cn-home-editorial-title" class="cn-home-editorial section-space" id="blog"><div class="container-wide">
+<div class="cn-home-editorial-head"><div><p class="eyebrow">EL UNIVERSO CRAN</p><h2 class="section-title" id="cn-home-editorial-title">Para leer, <span>descubrir e inspirarte.</span></h2></div><p>Historias gastronómicas, ideas para tu mesa y novedades de nuestro espacio digital.</p></div>
+<div class="cn-home-editorial-grid"><article class="cn-home-editorial-card"><a href="html/blog.html"><img alt="Burrata con cranberry y pistachos" loading="lazy" src="img/recetas/platos/plato-04.webp"/></a><div><span class="ce-kicker">BLOG · IDEAS &amp; SABORES</span><h3>Pequeños momentos, grandes sabores.</h3><p>Maridajes, inspiración y nuevas formas de disfrutar el cranberry cada día.</p><a class="cn-home-editorial-link" href="html/blog.html">Explorar el blog ↗</a></div></article>
+<article class="cn-home-editorial-card" id="noticias"><a href="html/noticias.html"><img alt="Frutos y paisaje de cosecha en Ensenada" loading="lazy" src="img/cosecha-en-ensenada.webp"/></a><div><span class="ce-kicker">NOTICIAS · NOVEDADES</span><h3>Lo nuevo en CRAN ENSENADA.</h3><p>Descubre información del catálogo, del recetario y de las funciones de nuestro sitio.</p><a class="cn-home-editorial-link" href="html/noticias.html">Ver noticias ↗</a></div></article></div>
+</div></section>
+<!-- sobre la pagina y contacto -->
+<section aria-labelledby="story-title" class="story-banner" id="historia"><div class="container-wide story-content"><p class="eyebrow">Nuestra filosofía</p><h2 id="story-title">De la naturaleza<br/>a tu mesa.</h2><p>Creemos en los sabores honestos y en el valor de compartir lo mejor de cada ingrediente.</p><button class="btn btn-light" data-contact="" type="button">Contáctanos <span aria-hidden="true">↗</span></button></div><div aria-hidden="true" class="story-decoration"></div></section>
+</main>
+<footer class="site-footer" id="contacto"><div class="container-wide footer-top"><div><a class="brand footer-brand" href="#inicio"><svg aria-hidden="true" class="brand-symbol" fill="none" viewbox="0 0 64 64"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3.2"></circle><path d="M10 43.5h44L39.9 22 33 32 26.5 19 10 43.5Z" fill="currentColor"></path></svg><span class="brand-wordmark"><span>CRAN</span><span>ENSENADA</span></span></a><p>Inspirados por la naturaleza, hechos para compartir.</p></div><div class="footer-links"><h3>Explora</h3><a href="html/productos.html">Productos</a><a href="html/recetas.html">Recetas</a><a href="html/nosotros.html">Nosotros</a></div><div class="footer-links"><h3>Descubre</h3><a href="html/blog.html">Blog</a><a href="html/noticias.html">Noticias</a><a href="#inicio">Volver al inicio ↑</a></div></div><div class="container-wide footer-bottom"><span>© <span id="year"></span> CRAN ENSENADA. Diseño demostrativo.</span><span>Hecho con inspiración natural.</span></div></footer>
+<dialog aria-labelledby="modal-title" class="modal" id="site-modal">
+<button aria-label="Cerrar ventana" class="modal-close" data-close-modal="" type="button">×</button>
+<div id="modal-inner"></div>
+</dialog>
+</body>
+</html>

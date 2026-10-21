@@ -1,0 +1,62 @@
+/* CRAN ENSENADA · Cuenta unificada y navegación administrativa */
+.ce-admin-menu > summary{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:45px;line-height:1!important;padding:11px 17px!important}
+.ce-admin-menu > summary .ce-admin-chevron{display:block;width:16px;height:16px;flex:0 0 16px;transform:none;transition:transform .18s ease}
+.ce-admin-menu[open] > summary .ce-admin-chevron{transform:rotate(180deg)}
+.ce-account-trigger{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:45px;border:1px solid #d9cfc2;background:#fffefa;border-radius:100px;padding:10px 14px;color:var(--forest);font:700 12px var(--font-body);white-space:nowrap;transition:background .2s,border-color .2s,box-shadow .2s;flex-shrink:0}
+.ce-account-trigger:hover{border-color:#c59d93;background:#f6efe7;box-shadow:0 4px 14px rgba(15,50,30,.06)}
+.ce-account-trigger:focus-visible{outline:3px solid #bf5666;outline-offset:3px}
+.ce-account-trigger svg{width:21px;height:21px;flex-shrink:0}
+.ce-account-label{display:none}
+/* Ninguna sección de la web necesita los botones de autenticación anteriores. */
+.mobile-auth{display:none!important}
+/* En móvil se mantienen cuenta y carro junto al menú de navegación. */
+@media(max-width:1030px){
+  .header-actions,body:not(.ce-page) .header-actions,.ce-page .header-actions{display:flex!important;gap:8px;align-items:center;margin-left:auto;flex-shrink:0}
+  .header-actions>.ce-admin-menu,.header-actions>.ce-admin-chip,.header-actions>.ce-view-button{display:none!important}
+  .menu-toggle{margin-left:0!important;flex:0 0 43px}
+  .header-actions>.ce-cart-link{min-height:43px;padding:10px 12px}
+  .ce-account-trigger{width:43px;height:43px;min-height:43px;padding:0}
+  .header-actions>.ce-cart-link svg{width:19px;height:19px}
+}
+@media(max-width:680px){
+  .header-inner,.ce-page .header-inner{gap:8px}
+  .header-actions>.ce-cart-link,body:not(.ce-page) .header-actions>.ce-cart-link{font-size:0!important;gap:5px;padding:8px 10px;min-width:44px;justify-content:center}
+  .header-actions>.ce-cart-link .ce-cart-count{font-size:10px!important;min-width:19px;height:19px}
+  body:not(.ce-page) .brand-symbol{width:41px;height:41px}
+  body:not(.ce-page) .brand-wordmark span:first-child{font-size:20px}
+  body:not(.ce-page) .brand-wordmark span:last-child{font-size:15px}
+}
+@media(max-width:380px){
+ .header-actions,body:not(.ce-page) .header-actions,.ce-page .header-actions{gap:5px}
+ .brand,.ce-page .brand{gap:4px}
+ .brand-symbol,.ce-page .brand-symbol{width:37px;height:37px}
+ .brand-wordmark span:first-child,.ce-page .brand-wordmark span:first-child{font-size:18px}
+ .brand-wordmark span:last-child,.ce-page .brand-wordmark span:last-child{font-size:13px}
+ .menu-toggle{flex-basis:38px;width:38px;padding:4px}
+ .ce-account-trigger{width:39px;height:39px;min-height:39px}
+ .header-actions>.ce-cart-link{min-width:39px;padding:7px!important}
+}
+.ce-account-dialog{width:min(475px,calc(100% - 28px));max-height:min(88dvh,800px);border:0;border-radius:23px;background:#fffdf9;box-shadow:0 28px 100px rgba(9,32,21,.31);padding:0;color:var(--forest);overscroll-behavior:contain}
+.ce-account-dialog::backdrop{background:rgba(6,29,17,.64);backdrop-filter:blur(3px)}
+.ce-account-inner{position:relative;padding:41px 37px 35px}
+.ce-account-close{position:absolute;right:18px;top:18px;border:0;background:#f5eee5;color:var(--forest);border-radius:50%;width:35px;height:35px;font-size:23px;display:grid;place-items:center;line-height:1}
+.ce-account-topline{color:var(--cranberry);font:700 10px var(--font-body);letter-spacing:.2em;text-transform:uppercase;margin:0 0 11px}
+.ce-account-heading{font:400 clamp(30px,6vw,40px)/1.13 var(--font-display);letter-spacing:-.025em;color:var(--forest);margin:0 45px 11px 0}
+.ce-account-intro{font-size:13px;color:#657268;line-height:1.72;margin:0 0 25px}
+.ce-account-fields{display:grid;gap:16px;margin:0}
+.ce-account-fields label{display:grid;gap:8px;font-size:12px;font-weight:700;color:var(--forest)}
+.ce-account-fields input{width:100%;min-height:47px;padding:12px 14px;border:1px solid #d9d6cc;border-radius:11px;background:white;color:var(--forest);font:14px var(--font-body)}
+.ce-account-fields input:focus{outline:2px solid #d6a3a7;outline-offset:1px;border-color:var(--cranberry)}
+.ce-account-help{text-align:right;margin:-7px 0 1px}
+.ce-account-link{background:transparent;border:0;padding:0;color:var(--cranberry);text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:700;cursor:pointer}
+.ce-account-submit{width:100%;min-height:49px;margin-top:4px;border:0;border-radius:100px;background:var(--cranberry);color:#fff;font:700 13px var(--font-body);transition:background .2s}
+.ce-account-submit:hover{background:var(--cranberry-dark)}
+.ce-account-submit:disabled{opacity:.6;cursor:wait}
+.ce-account-divider{display:flex;gap:12px;align-items:center;margin:24px 0 18px;color:#99978b;font-size:11px;justify-content:center}
+.ce-account-divider::before,.ce-account-divider::after{content:"";height:1px;background:#e9e3da;flex:1}
+.ce-account-bottom{text-align:center;color:#59675d;font-size:13px;margin:0;line-height:1.65}
+.ce-account-message{border-radius:10px;padding:13px 15px;background:#eff6ec;border:1px solid #d6e7d2;color:#24583e;font-size:12px;line-height:1.7;margin-top:18px}
+.ce-account-message.is-error{background:#fff2f0;color:#9a2430;border-color:#f0cbc9}
+.ce-account-message[hidden]{display:none!important}
+.ce-account-note{font-size:11px;color:#858b82;line-height:1.65;margin:17px 0 0}
+@media(max-width:550px){.ce-account-inner{padding:36px 23px 25px}.ce-account-heading{margin-right:35px}}

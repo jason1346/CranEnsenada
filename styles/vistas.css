@@ -1,0 +1,19 @@
+/* CRAN ENSENADA · Selector universal de vistas de demostración.
+   Una sola barra accesible para todas las páginas, también en teléfonos. */
+.ce-mode-strip{position:relative;z-index:15;width:100%;background:#f7f1ea;border-bottom:1px solid #e7ddcf;color:#0b3b25}
+.ce-mode-strip__inner{width:min(1360px,calc(100% - 52px));min-height:66px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.ce-mode-strip__label{display:inline-flex;align-items:center;gap:9px;font:700 12px/1.4 'DM Sans',Arial,sans-serif;white-space:nowrap;color:#27543a}
+.ce-mode-strip__dot{width:8px;height:8px;border-radius:50%;background:#a40b23;flex:none}
+.ce-mode-switch{display:inline-flex;gap:4px;align-items:center;padding:4px;border-radius:100px;border:1px solid #e0d3c5;background:#fffdfa;box-shadow:0 2px 6px rgba(20,34,24,.035);flex:0 0 auto}
+.ce-mode-choice{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:39px;padding:10px 16px;border:0;border-radius:100px;background:transparent;color:#31533b;cursor:pointer;font:700 12px/1.2 'DM Sans',Arial,sans-serif;white-space:nowrap;transition:background .18s,color .18s,box-shadow .18s}
+.ce-mode-choice svg{width:17px;height:17px;flex:0 0 17px}
+.ce-mode-choice:hover:not(.is-selected){background:#f2ede5;color:#9b1028}
+.ce-mode-choice:focus-visible{outline:3px solid #bf6976;outline-offset:2px}
+.ce-mode-choice.is-selected{background:#0d3824;color:#fff;box-shadow:0 3px 12px rgba(8,42,23,.12)}
+.ce-mode-choice[data-ce-set-mode="administrador"].is-selected{background:#a10c26}
+.ce-mode-strip__note{color:#788176;font:500 11px/1.3 'DM Sans',Arial,sans-serif;text-align:right;white-space:nowrap}
+@media(max-width:1100px){.ce-mode-strip__label{display:none}.ce-mode-strip__inner{justify-content:space-between}}
+@media(max-width:760px){.ce-mode-strip__note{display:none}.ce-mode-strip__inner{justify-content:center;min-height:60px}}
+@media(max-width:480px){.ce-mode-strip__inner{width:calc(100% - 18px);min-height:58px;gap:0}.ce-mode-switch{max-width:100%;width:100%;justify-content:stretch;gap:2px}.ce-mode-choice{flex:1 1 0;min-width:0;padding:10px 5px;font-size:11px;gap:5px}.ce-mode-choice svg{width:15px;height:15px;flex-basis:15px}}
+@media(max-width:350px){.ce-mode-choice{font-size:10px;padding-inline:3px;gap:4px}.ce-mode-choice svg{width:14px;height:14px;flex-basis:14px}}
+@media(prefers-reduced-motion:reduce){.ce-mode-choice{transition:none}}

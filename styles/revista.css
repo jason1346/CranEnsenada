@@ -1,0 +1,122 @@
+:root{--cn-forest:#0b3924;--cn-berry:#aa1429;--cn-cream:#faf5ef;--cn-muted:#647568}
+.cn-home-editorial{background:#fffdfa;padding-top:70px;padding-bottom:110px}
+.cn-home-editorial-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:32px}
+.cn-home-editorial-head .section-title{max-width:720px;margin:12px 0 0}
+.cn-home-editorial-head>p{max-width:335px;font-size:15px;line-height:1.8;color:#647266;margin:0 0 8px}
+.cn-home-editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.cn-home-editorial-card{background:#f6f0e8;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:45% 55%;min-height:350px}
+.cn-home-editorial-card:nth-child(2){background:#f0f4ed}
+.cn-home-editorial-card>a{display:block;min-height:100%}
+.cn-home-editorial-card>a img{height:100%;width:100%;object-fit:cover;transition:transform .5s}
+.cn-home-editorial-card>a:hover img{transform:scale(1.06)}
+.cn-home-editorial-card>div{padding:33px 28px;display:flex;align-items:start;flex-direction:column;justify-content:center}
+.cn-home-editorial-card h3{font:400 clamp(23px,2.2vw,33px)/1.18 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:14px 0 12px}
+.cn-home-editorial-card>div>p{font-size:13px;line-height:1.75;color:#657267;margin:0 0 25px}
+.cn-home-editorial-link{color:var(--cn-berry);font-size:13px;font-weight:800;text-decoration:underline;text-underline-offset:5px}
+.cn-magazine{background:#fffdfa}
+.cn-magazine-hero{background:#f6f0e8;padding:24px 0 75px}
+.cn-magazine-hero .ce-crumbs{margin-bottom:37px}
+.cn-magazine-hero-grid{display:grid;grid-template-columns:1fr 42%;align-items:center;gap:65px}
+.cn-magazine-hero-grid h1{font:400 clamp(45px,5.1vw,79px)/1.08 var(--font-display,Georgia,serif);color:var(--cn-forest);max-width:700px;letter-spacing:-.035em;margin:16px 0 21px}
+.cn-magazine-hero-grid h1 em,.cn-magazine-head em,.cn-magazine-promo h2 em,.cn-reviews h2 em{font-style:normal;color:var(--cn-berry)}
+.cn-magazine-hero-grid p:not(.ce-kicker){font-size:16px;line-height:1.9;color:#526657;max-width:490px;margin-bottom:30px}
+.cn-magazine-hero-grid img{width:100%;height:400px;object-fit:cover;border-radius:190px 190px 18px 18px}
+.cn-magazine-content{padding-top:87px;padding-bottom:105px}
+.cn-magazine-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px}
+.cn-magazine-head h2{font:400 clamp(34px,4vw,51px)/1.2 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:8px 0 0}
+.cn-magazine-head>span{font-size:12px;color:#718175;white-space:nowrap}
+.cn-magazine-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.cn-mag-card{background:white;border-radius:18px;overflow:hidden;border:1px solid #e8e8df;transition:box-shadow .2s,transform .2s;min-width:0}
+.cn-mag-card:hover{transform:translateY(-4px);box-shadow:0 15px 50px #12382111}
+.cn-mag-card.is-featured{grid-column:span 2;display:grid;grid-template-columns:52% 48%}
+.cn-mag-card-cover{display:block;overflow:hidden;height:230px}
+.cn-mag-card.is-featured .cn-mag-card-cover{height:100%;min-height:365px}
+.cn-mag-card-cover img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.cn-mag-card-cover:hover img{transform:scale(1.04)}
+.cn-mag-card-text{padding:26px;display:flex;flex-direction:column;align-items:start}
+.cn-mag-card-text h3{font:400 26px/1.2 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:13px 0 12px}
+.cn-mag-card.is-featured h3{font-size:clamp(28px,3vw,43px)}
+.cn-mag-card-text p{color:#5f6f61;font-size:13px;line-height:1.75;margin:0 0 26px}
+.cn-mag-read{font-size:12px;color:var(--cn-berry);text-decoration:underline;text-underline-offset:5px;font-weight:800;margin-top:auto}
+.cn-magazine-promo{background:#e8f0e8;padding:58px 0}
+.cn-magazine-promo>.ce-container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.cn-magazine-promo h2{font:400 clamp(33px,3.8vw,52px)/1.1 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:12px 0}
+.cn-magazine-promo p:not(.ce-kicker){max-width:560px;color:#667369;margin:0;font-size:14px;line-height:1.7}
+.cn-magazine-promo a{white-space:nowrap}
+.cn-article-page{padding-top:35px;padding-bottom:110px}
+.cn-article-page .ce-crumbs{flex-wrap:wrap}
+.cn-article-heading{max-width:870px;margin:53px auto 35px;text-align:center}
+.cn-article-heading h1{font:400 clamp(39px,5.3vw,71px)/1.13 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:17px 0}
+.cn-article-lead{font-size:17px;color:#5c6a5e;line-height:1.85;max-width:680px;margin:0 auto 15px}
+.cn-article-date{font-size:12px;color:#78887a}
+.cn-article-hero-img{width:100%;height:clamp(330px,46vw,600px);border-radius:23px;object-fit:cover}
+.cn-article-body{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:clamp(36px,8vw,120px);max-width:1050px;margin:65px auto 0;align-items:start}
+.cn-article-prose h2{font:400 32px/1.25 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:0 0 16px}
+.cn-article-prose p{font-size:16px;color:#4e5d50;line-height:1.98;margin:0 0 38px}
+.cn-article-prose .cn-article-disclaimer{font-size:12px;color:#879389;border-top:1px solid #e6e8e1;padding-top:20px}
+.cn-article-side{background:#f6f0e8;border-radius:19px;padding:34px 29px;position:sticky;top:25px}
+.cn-article-side h3{font:400 31px/1.2 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:13px 0}
+.cn-article-side p{font-size:13px;line-height:1.8;color:#637568;margin-bottom:23px}
+.cn-article-side .ce-btn{display:inline-flex;margin-bottom:20px}
+.cn-article-back{display:block;text-decoration:underline;color:var(--cn-berry);font-size:12px;font-weight:700}
+.cn-article-missing{text-align:center;padding:140px 20px}
+.cn-article-missing h1{font:42px var(--font-display,Georgia,serif);color:var(--cn-forest)}
+/* Recipe administration */
+.cn-recipe-admin[hidden], [data-ce-admin-only][hidden]{display:none!important}
+.cn-recipe-admin{margin:15px 0 30px;border-radius:17px;padding:19px 25px;background:#ebf0e8;border:1px solid #d6e2d4;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.cn-recipe-admin strong{font-size:14px;color:var(--cn-forest);display:block}
+.cn-recipe-admin span{display:block;color:#68796a;font-size:12px;line-height:1.5;margin-top:5px}
+.cn-recipe-admin-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cn-recipe-admin-actions .ce-btn{font-size:12px;padding:11px 17px}
+.cn-recipe-card-admin{border-top:1px solid #e6e2d9;display:flex;gap:9px;margin-top:18px;padding-top:15px}
+.cn-recipe-card-admin button{padding:10px 17px;border:1px solid #cfdad0;border-radius:999px;background:#edf3ec;color:var(--cn-forest);font-size:12px;font-weight:800;cursor:pointer}
+.cn-recipe-card-admin button.cn-danger{background:#fff2f0;border-color:#f0d4d3;color:var(--cn-berry)}
+.cn-recipe-empty{grid-column:1/-1;padding:50px 25px;text-align:center;background:#f7f1e9;border-radius:20px;color:var(--cn-forest)}
+.cn-recipe-empty h3{font:30px var(--font-display,Georgia,serif);margin:0}
+.cn-recipe-empty p{color:#718273;font-size:13px}
+.cn-editor-dialog{width:min(650px,calc(100% - 26px));max-height:min(88vh,830px);overflow-y:auto;border:0;background:#fffdfa;color:var(--cn-forest);border-radius:22px;padding:32px 36px;box-shadow:0 22px 100px #082b1d44}
+.cn-editor-dialog::backdrop{background:#0a241ba9;backdrop-filter:blur(3px)}
+.cn-editor-top{display:flex;justify-content:space-between;gap:20px;align-items:start}
+.cn-editor-top h2{font:400 34px/1.25 var(--font-display,Georgia,serif);margin:10px 0 22px;color:var(--cn-forest)}
+.cn-editor-top button{width:36px;height:36px;flex:0 0 auto;border:0;border-radius:50%;background:#f1ece5;color:#2b5138;font-size:24px;cursor:pointer}
+.cn-editor-form{display:grid;gap:17px}
+.cn-editor-form label,.cn-review-form label{display:grid;gap:8px;color:#344e3a;font-size:12px;font-weight:800}
+.cn-editor-form input,.cn-editor-form select,.cn-editor-form textarea,.cn-review-form input,.cn-review-form textarea{width:100%;border:1px solid #d7dfd2;border-radius:10px;background:#fff;color:var(--cn-forest);padding:12px;font:14px/1.5 'DM Sans',sans-serif}
+.cn-editor-form textarea{resize:vertical}
+.cn-editor-actions{display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap;margin-top:7px}
+.cn-editor-actions .ce-btn{font-size:12px;white-space:nowrap}
+.cn-form-small{font-size:11px;color:#859083;line-height:1.6;margin:0}
+.cn-editor-confirm>p{font-size:14px;color:#5e7063;line-height:1.7}
+/* Product reviews */
+.cn-reviews{padding:90px 0;background:#f7f2ec}
+.cn-review-head{display:flex;align-items:end;justify-content:space-between;gap:25px;border-bottom:1px solid #e2ded5;padding-bottom:32px;margin-bottom:35px}
+.cn-review-head h2{font:400 clamp(35px,4vw,54px)/1.14 var(--font-display,Georgia,serif);color:var(--cn-forest);margin:14px 0 12px}
+.cn-review-head>div:first-child>p:not(.ce-kicker){font-size:14px;color:#637568;max-width:560px;line-height:1.7;margin:0}
+.cn-rating-summary{text-align:right;min-width:145px}
+.cn-rating-big{display:flex;justify-content:flex-end;align-items:center;gap:8px}
+.cn-rating-big strong{font:400 56px var(--font-display,Georgia,serif);color:var(--cn-forest)}
+.cn-rating-big span{font-size:28px;color:#b11a2c}
+.cn-rating-stars{font-size:19px;letter-spacing:2px;color:#b11a2c}
+.cn-rating-summary small{font-size:11px;color:#7c887c}
+.cn-review-layout{display:grid;grid-template-columns:1fr 390px;gap:35px;align-items:start}
+.cn-review-list{display:grid;gap:17px}
+.cn-review-empty{background:#fffdfa;padding:34px;border-radius:16px;color:#607264;font-size:14px;line-height:1.7}
+.cn-review-card{border:1px solid #e5e6dc;background:#fffdfa;border-radius:16px;padding:26px 28px}
+.cn-review-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:9px}
+.cn-review-top strong{color:var(--cn-forest);font-size:15px}
+.cn-review-top time{font-size:11px;color:#819184}
+.cn-review-card>p{font-size:14px;line-height:1.8;color:#4e5e51;margin:12px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}
+.cn-review-delete{color:var(--cn-berry);background:#fff0ee;border:1px solid #f0d5d5;border-radius:40px;padding:10px 15px;margin-top:17px;font-size:11px;cursor:pointer;font-weight:800}
+.cn-review-form{padding:29px 30px;border:1px solid #e3ded4;border-radius:19px;background:#fffdfa;display:grid;gap:18px;position:sticky;top:22px}
+.cn-review-form h3{font:400 29px var(--font-display,Georgia,serif);color:var(--cn-forest);margin:0}
+.cn-review-form p:not(.ce-kicker){color:#637368;font-size:12px;line-height:1.7;margin:-8px 0 0}
+.cn-review-form small{font-size:11px;line-height:1.6;color:#889488}
+.cn-star-fieldset{border:0;padding:0;margin:0}
+.cn-star-fieldset legend{font-size:12px;font-weight:800;color:#365443;margin-bottom:8px}
+.cn-star-buttons{display:flex;gap:5px}
+.cn-star-buttons button{border:0;background:none;color:#c9cfc7;font-size:30px;cursor:pointer;padding:2px;line-height:1.2}
+.cn-star-buttons button.is-selected{color:#b3172f}
+.cn-form-helper{font-size:11px;color:#7c8b7d;margin-top:5px;display:block}
+@media(max-width:1050px){.cn-home-editorial-grid{gap:14px}.cn-home-editorial-card{grid-template-columns:1fr}.cn-home-editorial-card>a img{height:200px}.cn-home-editorial-card>div{padding:26px}.cn-magazine-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cn-mag-card.is-featured{grid-column:span 2}.cn-review-layout{grid-template-columns:1fr 340px}}
+@media(max-width:760px){.cn-home-editorial{padding:65px 0}.cn-home-editorial-head{align-items:start;flex-direction:column;gap:8px}.cn-home-editorial-grid{grid-template-columns:1fr;gap:21px}.cn-home-editorial-card{grid-template-columns:42% 58%}.cn-home-editorial-card>a img{height:100%}.cn-magazine-hero-grid{grid-template-columns:1fr;gap:25px}.cn-magazine-hero-grid img{max-height:340px;border-radius:21px}.cn-magazine-content{padding:65px 0}.cn-magazine-grid{grid-template-columns:1fr}.cn-mag-card.is-featured{grid-column:span 1;grid-template-columns:1fr}.cn-mag-card.is-featured .cn-mag-card-cover{min-height:0;height:230px}.cn-magazine-promo>.ce-container{align-items:start;flex-direction:column}.cn-article-body{grid-template-columns:1fr;gap:20px;margin-top:42px}.cn-article-side{position:static}.cn-recipe-admin{flex-direction:column;align-items:start}.cn-review-layout{grid-template-columns:1fr}.cn-review-form{position:static}.cn-review-head{align-items:start;flex-direction:column}.cn-rating-summary{text-align:left}.cn-rating-big{justify-content:start}.cn-reviews{padding:65px 0}}
+@media(max-width:500px){.cn-home-editorial-card{display:block}.cn-home-editorial-card>a img{height:210px}.cn-magazine-hero-grid h1{font-size:44px}.cn-magazine-head{align-items:start;flex-direction:column}.cn-mag-card-text{padding:24px}.cn-editor-dialog{padding:22px}.cn-review-form{padding:24px}.cn-review-card{padding:20px}}

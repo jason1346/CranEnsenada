@@ -1,0 +1,87 @@
+/* CRAN ENSENADA · Panel de inventario */
+.iv-page{background:#fffdfa}
+.iv-page .main-nav>a{font-size:clamp(11px,.88vw,14px)}
+.iv-page .header-inner{gap:16px}
+.iv-hero{background:radial-gradient(circle at 88% 0%,#ede1cd 0,transparent 46%),#f7f2e9;padding:44px 0 56px;border-bottom:1px solid #e8e2d7}
+.iv-hero .ce-crumbs{margin-bottom:34px}
+.iv-hero-row{display:flex;align-items:end;justify-content:space-between;gap:25px}
+.iv-hero h1{font:400 clamp(44px,5.2vw,70px)/1.08 var(--font-display);letter-spacing:-.04em;margin:4px 0 14px;color:var(--forest)}
+.iv-hero h1 em,.iv-panel-top h2 em{font-style:normal;color:var(--cranberry)}
+.iv-hero-row>div:first-child>p:last-child{color:#67766a;margin:0;line-height:1.7;font-size:15px;max-width:670px}
+.iv-hero-badge{border-radius:15px;padding:16px 19px;background:#fffdf9;border:1px solid #e4dccc;color:var(--forest);font-size:10px;font-weight:800;letter-spacing:.1em;white-space:nowrap;box-shadow:0 12px 30px #18362609}
+.iv-hero-badge small{display:block;margin:6px 0 0 16px;color:#888f83;font-size:11px;font-weight:500;letter-spacing:0}
+.iv-badge-dot{display:inline-block;background:#328764;width:8px;height:8px;border-radius:50%;margin-right:8px}
+.iv-main{padding:36px 0 85px}
+.iv-notice{display:flex;gap:16px;border:1px solid #dfe7dd;background:#f2f7f1;padding:17px 21px;border-radius:15px;color:#496b52;align-items:start}
+.iv-notice>span{font-size:23px;line-height:1.2;color:#287048}
+.iv-notice p{margin:0;font-size:12px;line-height:1.75}
+.iv-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:25px}
+.iv-kpi{position:relative;background:white;border:1px solid #e8e5df;border-radius:17px;padding:24px 25px;overflow:hidden;min-height:150px}
+.iv-kpi>span{font-size:12px;color:#738075;display:block;margin-bottom:15px}
+.iv-kpi>strong{font:400 44px/1 var(--font-display);color:var(--forest);display:block}
+.iv-kpi>small{font-size:11px;color:#849086;display:block;margin-top:11px}
+.iv-kpi-mark{position:absolute;right:20px;top:18px;font:35px var(--font-display);color:#e2d4c2}
+.iv-kpi:nth-child(3) .iv-kpi-mark{color:#cfb3ad}
+.iv-alert{display:flex;justify-content:space-between;align-items:center;gap:22px;background:#f4f7f1;border:1px solid #dfe9d8;border-radius:16px;padding:20px 24px;margin:24px 0 32px}
+.iv-alert.iv-alert-active{background:#fff8ee;border-color:#e9cbb1}
+.iv-alert-heading{display:flex;align-items:center;gap:15px}
+.iv-alert-icon{border-radius:50%;width:40px;height:40px;background:#dcebdc;color:var(--forest);display:grid;place-items:center;font-size:20px;font-weight:700}
+.iv-alert-active .iv-alert-icon{background:#f1ded1;color:#a63936}
+.iv-alert h2{font:400 20px var(--font-display);margin:0;color:var(--forest)}
+.iv-alert p{font-size:12px;margin:4px 0 0;color:#72806e}
+.iv-alert ul{font-size:12px;color:#7a5c46;margin:0;padding-left:18px;max-width:50%;line-height:1.6}
+.iv-panel{background:#fff;border:1px solid #e9e5dc;border-radius:19px;overflow:hidden;margin-top:23px;box-shadow:0 12px 28px #0f321b05}
+.iv-panel-top{padding:27px 29px;display:flex;align-items:end;justify-content:space-between;gap:18px}
+.iv-panel-top .ce-kicker{margin-bottom:6px}
+.iv-panel-top h2{font:400 clamp(27px,3vw,38px)/1.16 var(--font-display);margin:0;color:var(--forest)}
+.iv-panel-tools{display:flex;align-items:center;gap:19px}
+.iv-caption{font-size:12px;color:#788578;white-space:nowrap}
+.iv-panel-tools .ce-btn{font-size:12px;padding:11px 18px}
+.iv-filter-row{padding:0 29px 22px;display:flex;gap:12px}
+.iv-search-label{flex:1}.iv-search-label input,.iv-select-label select{width:100%;height:44px;border:1px solid #dedfd5;border-radius:10px;background:#fffdf9;color:var(--forest);padding:0 14px;font:13px var(--font-body)}
+.iv-select-label{display:flex;align-items:center;gap:10px;font-size:12px;color:#758174}
+.iv-select-label select{min-width:190px}
+.iv-table-scroll{width:100%;overflow:auto}
+.iv-table{width:100%;border-collapse:collapse;min-width:980px;text-align:left;font-size:12px}
+.iv-table thead{background:#f6f4ef;color:#727f73;text-transform:uppercase;font-size:10px;letter-spacing:.075em}
+.iv-table th{font-weight:800;padding:17px 19px;white-space:nowrap}
+.iv-table td{padding:19px;vertical-align:middle;border-top:1px solid #ebeae3;color:var(--forest)}
+.iv-table td small{display:block;font-size:11px;color:#859286;margin-top:5px}
+.iv-product-cell{display:flex;align-items:center;gap:14px;min-width:205px}
+.iv-product-cell img{width:61px;height:65px;object-fit:cover;border-radius:11px;background:#f4ece6}
+.iv-product-cell strong{font:400 17px/1.2 var(--font-display)}
+.iv-stock-val{font:400 28px/1 var(--font-display)}
+.iv-pill,.iv-catalog-stock,.iv-detail-stock{display:inline-flex;align-items:center;border:1px solid;border-radius:100px;font-size:11px;font-weight:800;padding:8px 12px;white-space:nowrap}
+.iv-pill.ok,.iv-catalog-stock.ok,.iv-detail-stock.ok{background:#eff8ee;color:#2f7448;border-color:#d0e5d0}
+.iv-pill.low,.iv-catalog-stock.low,.iv-detail-stock.low{background:#fff6e7;color:#a56d2d;border-color:#efd7b4}
+.iv-pill.out,.iv-catalog-stock.out,.iv-detail-stock.out{background:#fff0ee;color:#ac393b;border-color:#ecc5c3}
+.iv-row-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;min-width:345px}
+.iv-row-actions button{background:#f0f4ec;color:var(--forest);border:1px solid #d7e4d6;border-radius:100px;font-size:11px;padding:9px 12px;font-weight:700;white-space:nowrap}
+.iv-row-actions button:hover{background:#e3efe1}
+.iv-row-actions button.iv-ghost{color:#7d2c37;border-color:#efdedc;background:#fff6f5}
+.iv-row-actions button.iv-ghost:hover{background:#ffebea}
+.iv-panel-footnote{margin:0;padding:17px 29px;border-top:1px solid #edeae4;color:#899488;font-size:11px;line-height:1.65}
+.iv-table-empty{padding:36px;text-align:center;color:#7f8b7f;font-size:13px}
+.iv-history-table{min-width:850px}
+.iv-history-empty{text-align:center;padding:34px!important;color:#7f887c!important}
+.iv-positive{color:#287849!important;font-weight:800}
+.iv-negative{color:#aa363f!important;font-weight:800}
+.iv-bottom-links{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:30px}
+.iv-bottom-links a{font-size:13px;font-weight:800;color:var(--cranberry);text-decoration:underline;text-underline-offset:5px}
+.iv-locked{text-align:center;padding:95px 0 150px}
+.iv-lock-icon{font-size:40px;margin-bottom:16px}
+.iv-locked h2{font:400 36px var(--font-display);color:var(--forest);margin:0 0 14px}
+.iv-locked p{max-width:570px;color:#738073;line-height:1.7;margin:0 auto 25px;font-size:14px}
+.iv-dialog #iv-movement-fields,.iv-dialog #iv-settings-fields{display:grid;gap:16px}
+.iv-dialog #iv-movement-fields[hidden],.iv-dialog #iv-settings-fields[hidden]{display:none!important}
+.iv-dialog label{display:grid;gap:8px;font-size:12px;font-weight:700;color:var(--forest)}
+.iv-dialog-error{border-radius:10px;background:#fff0ee;color:#b03136!important;padding:12px}
+.iv-wholesale-note{font-size:11px!important;color:#6b7668;margin:0 0 12px}
+.iv-detail-stock{margin:0 0 10px}
+.iv-catalog-stock{margin:6px 0 11px}
+.iv-cart-warning{border:1px solid #ecc3be;background:#fff1ef;color:#9d3039;padding:12px 14px;border-radius:10px;line-height:1.6;font-size:12px!important}
+.iv-page button:disabled,.ce-page button:disabled:not(.menu-toggle){opacity:.45;cursor:not-allowed}
+.iv-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:1120px){.iv-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.iv-alert{align-items:start;flex-direction:column}.iv-alert ul{max-width:100%}}
+@media(max-width:770px){.iv-hero-row{align-items:start;flex-direction:column}.iv-hero-badge{align-self:start}.iv-panel-top{align-items:start;flex-direction:column}.iv-filter-row{flex-wrap:wrap}.iv-search-label{min-width:100%}.iv-select-label{width:100%}.iv-select-label select{flex:1}}
+@media(max-width:510px){.iv-hero{padding:28px 0 42px}.iv-kpis{gap:10px}.iv-kpi{padding:18px 15px;min-height:132px}.iv-kpi>strong{font-size:36px}.iv-kpi>span{font-size:11px}.iv-panel-top{padding:22px 18px}.iv-panel-tools{align-items:start;flex-direction:column;gap:10px}.iv-filter-row{padding:0 18px 18px}.iv-panel-footnote{padding:16px 18px}.iv-alert{padding:18px}.iv-hero h1{font-size:43px}}

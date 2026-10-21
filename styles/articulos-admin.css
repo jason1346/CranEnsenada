@@ -1,0 +1,28 @@
+/* CRAN ENSENADA · Administrar Blog y Noticias. */
+.cn-mag-admin[hidden]{display:none!important}
+.cn-mag-admin{background:#e9f1e7;border:1px solid #d2e2cf;border-radius:19px;margin:-8px 0 30px;padding:20px 25px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.cn-mag-admin strong{color:#0b3924;font-size:15px;display:block}
+.cn-mag-admin span{color:#617466;font-size:12px;line-height:1.5;display:block;margin-top:4px}
+.cn-mag-admin-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.cn-edit-btn{font-family:inherit;background:#eff3ed;border:1px solid #cfdcd0;color:#0b3924;font-size:12px;font-weight:750;padding:10px 16px;border-radius:999px;cursor:pointer;transition:.2s}
+.cn-edit-btn:hover{background:#e1eade;transform:translateY(-1px)}
+.cn-edit-btn.primary{background:#0b3924;border-color:#0b3924;color:#fff}
+.cn-edit-btn.danger{background:#fff6f5;border-color:#eacac8;color:#a7162c}
+.cn-mag-admin-card{border-top:1px solid #e6e6dd;margin-top:20px;padding-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.cn-mag-admin-card.cn-detail-edit{justify-content:center;border:none;padding:15px 0 0;margin-top:8px}
+.cn-mag-empty{grid-column:1/-1;background:#f6f0e8;border-radius:18px;padding:60px 25px;text-align:center}
+.cn-mag-empty h3{font:30px var(--font-display,Georgia,serif);color:#0b3924;margin:0 0 9px}
+.cn-mag-empty p{color:#667468;font-size:14px}
+.cn-article-editor .cn-art-sections{display:grid;gap:14px}
+.cn-art-sections-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-top:10px}
+.cn-art-sections-head strong{color:#0b3924;font-size:14px}
+.cn-art-section-row{background:#f8f4ed;border:1px solid #e8e3d9;border-radius:13px;padding:17px;display:grid;gap:12px}
+.cn-art-section-title{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.cn-art-section-title strong{font-size:12px;color:#33543e}
+.cn-art-section-row label{display:grid;gap:7px;font-size:12px;color:#36503c;font-weight:750}
+.cn-art-section-row input,.cn-art-section-row textarea{width:100%;border:1px solid #d8ddd5;border-radius:10px;background:white;font:14px inherit;padding:11px 12px;resize:vertical;color:#1b3625;box-sizing:border-box}
+.cn-art-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cn-art-editor-hint{color:#718074;font-size:11px;line-height:1.6;margin:0}
+.cn-article-confirm p{color:#596b5d;line-height:1.6}
+.cn-article-editor{max-height:88vh}
+@media(max-width:730px){.cn-mag-admin{flex-direction:column;align-items:start;padding:18px}.cn-art-form-grid{grid-template-columns:1fr}.cn-art-sections-head{align-items:start;flex-direction:column}.cn-mag-admin-actions{width:100%}}

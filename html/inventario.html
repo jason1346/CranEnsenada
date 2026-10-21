@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="#fffdfa" name="theme-color"/><meta content="Panel de control de inventario de CRAN ENSENADA: existencias, mínimos, movimientos y exportación." name="description"/><title>Control de inventario | CRAN ENSENADA</title><link href="../img/favicon.svg" rel="icon" type="image/svg+xml"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Marcellus&amp;display=swap" rel="stylesheet"/><link href="../styles/styles.css" rel="stylesheet"/><link href="../styles/tienda.css" rel="stylesheet"/><link href="../styles/contenido.css" rel="stylesheet"/><link href="../styles/cuenta.css" rel="stylesheet"/><link href="../styles/vistas.css" rel="stylesheet"/><script defer="" src="../js/script.js"></script><script defer="" src="../js/cuenta.js"></script><script defer="" src="../js/inventario-core.js"></script><script defer="" src="../js/tienda.js"></script><script defer="" src="../js/reportes.js"></script><link href="../styles/inventario.css" rel="stylesheet"/><script defer="" src="../js/inventario.js"></script></head>
+<body class="ce-page iv-page" data-ce-page="inventario">
+<a class="skip-link" href="#principal">Saltar al contenido</a>
+<header class="site-header"><div class="header-inner container-wide"><a aria-label="CRAN ENSENADA · Inicio" class="brand" href="../index.html"><svg aria-hidden="true" class="brand-symbol" fill="none" viewbox="0 0 64 64"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="3.2"></circle><path d="M10 43.5h44L39.9 22 33 32 26.5 19 10 43.5Z" fill="currentColor"></path><path d="m25 21 5 8-3.8-1.8-3.5 2.2L25 21ZM40 23l5.4 8.5-4.8-2-4.3 2.1L40 23Z" fill="#fff"></path></svg><span class="brand-wordmark"><span>CRAN</span><span>ENSENADA</span></span></a><nav aria-label="Navegación principal" class="main-nav" id="primary-navigation"><a href="blog.html">Blog</a><a href="recetas.html">Recetas</a><a href="noticias.html">Noticias</a><a href="nosotros.html">Sobre Nosotros</a><a href="productos.html">Nuestros Productos</a><a aria-current="page" class="ce-admin-nav" data-ce-admin-only="" href="reportes.html">Reportes de ventas</a><a class="ce-admin-nav" data-ce-admin-only="" aria-current="page" href="inventario.html">Inventario</a></nav><div class="header-actions"><details class="ce-admin-menu" data-ce-admin-only="">
+  <summary aria-label="Abrir herramientas de administración">Administración <svg class="ce-admin-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+  <div class="ce-admin-menu-panel">
+    <a href="inventario.html">Inventario</a>
+    <a href="reportes.html">Reportes de ventas</a>
+  </div>
+</details><button class="ce-account-trigger" type="button" data-ce-account aria-label="Abrir mi cuenta: iniciar sesión o registrarse" title="Mi cuenta"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.7" stroke="currentColor" stroke-width="1.7"/><path d="M4.7 20c.4-4.1 3.2-6.4 7.3-6.4s6.9 2.3 7.3 6.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="ce-account-label">Mi cuenta</span></button><a aria-label="Ir al carro" class="ce-cart-link" href="carro.html"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><path d="M3 8h18l-2 13H5L3 8Zm5 0V6a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg> Carro <span class="ce-cart-count" data-ce-cart-count="">0</span></a></div><button aria-controls="primary-navigation" aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" type="button"><span></span><span></span><span></span></button></div></header>
+<!-- Selector de vistas visible en todas las páginas (demostración) -->
+<section class="ce-mode-strip" aria-label="Vista del sitio web">
+  <div class="ce-mode-strip__inner">
+    <div class="ce-mode-strip__label"><span class="ce-mode-strip__dot" aria-hidden="true"></span><span>Modo de visualización</span></div>
+    <div class="ce-mode-switch" role="group" aria-label="Elegir entre vista de cliente y administrador">
+      <button class="ce-mode-choice" type="button" data-ce-set-mode="cliente" aria-pressed="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c0-3.7 2.5-6 7-6s7 2.3 7 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Vista de cliente
+      </button>
+      <button class="ce-mode-choice" type="button" data-ce-set-mode="administrador" aria-pressed="false">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><rect x="4.5" y="5" width="15" height="15" rx="2.7" stroke="currentColor" stroke-width="1.8"/><path d="M9 5V3.5M15 5V3.5M8 11h8M8 15h5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></svg>
+        Vista de administrador
+      </button>
+    </div>
+    <span class="ce-mode-strip__note">Modo demostración · Sin inicio de sesión real</span>
+  </div>
+</section>
+
+<main id="principal">
+  <section class="iv-hero">
+    <div class="ce-container">
+      <nav aria-label="Ruta de navegación" class="ce-crumbs"><a href="../index.html">Inicio</a><span>/</span><strong>Control de inventario</strong></nav>
+      <div class="iv-hero-row">
+        <div><p class="ce-kicker">GESTIÓN INTERNA · CRAN ENSENADA</p><h1>Control de <em>inventario.</em></h1><p>Supervisa existencias, registra movimientos y anticipa la reposición de tus productos.</p></div>
+        <div class="iv-hero-badge"><span class="iv-badge-dot"></span> PANEL DE ADMINISTRACIÓN <small>Demostración local</small></div>
+      </div>
+    </div>
+  </section>
+  <section id="iv-locked" class="ce-container iv-locked" hidden>
+    <div class="iv-lock-icon">🔒</div><h2>Acceso de administrador</h2>
+    <p>El control de inventario solo está disponible en la vista de administración. Este acceso es demostrativo y no sustituye un sistema de permisos seguro.</p>
+    <button class="ce-btn" data-ce-toggle-mode type="button">Activar vista de administrador</button>
+  </section>
+  <div id="iv-app" class="ce-container iv-main">
+    <div class="iv-notice"><span aria-hidden="true">ⓘ</span><p><strong>Inventario de demostración:</strong> comienza con 36 frascos de mermelada y 24 de conserva como cantidades de ejemplo, no datos reales. Los movimientos se guardan solo en este navegador. Añadir al carro comprueba disponibilidad, pero no descuenta existencias ni registra una venta.</p></div>
+    <div class="iv-kpis">
+      <article class="iv-kpi"><span>Productos registrados</span><strong id="iv-kpi-products">2</strong><small>Referencias en catálogo</small><div class="iv-kpi-mark">◈</div></article>
+      <article class="iv-kpi"><span>Stock total</span><strong id="iv-kpi-stock">60</strong><small>Frascos físicos de ejemplo</small><div class="iv-kpi-mark">▤</div></article>
+      <article class="iv-kpi"><span>Alertas de stock</span><strong id="iv-kpi-low">0</strong><small>Agotados o bajo el mínimo</small><div class="iv-kpi-mark">!</div></article>
+      <article class="iv-kpi"><span>En carros locales</span><strong id="iv-kpi-cart">0</strong><small>No descuenta inventario</small><div class="iv-kpi-mark">↗</div></article>
+    </div>
+    <section class="iv-alert" id="iv-alert-box" aria-live="polite">
+      <div class="iv-alert-heading"><span class="iv-alert-icon">✓</span><div><h2>Alertas y reposición</h2><p id="iv-alert-count">Existencias dentro de los mínimos</p></div></div>
+      <ul id="iv-alert-list"><li>Sin alertas pendientes</li></ul>
+    </section>
+    <section class="iv-panel" aria-labelledby="iv-products-heading">
+      <div class="iv-panel-top"><div><p class="ce-kicker">EXISTENCIAS Y MOVIMIENTOS</p><h2 id="iv-products-heading">Inventario <em>actual</em></h2></div><div class="iv-panel-tools"><span id="iv-products-count" class="iv-caption">2 productos</span><button id="iv-export" type="button" class="ce-btn ce-btn-stroke">Exportar inventario CSV ↓</button></div></div>
+      <div class="iv-filter-row"><label class="iv-search-label"><span class="iv-sr-only">Buscar producto o SKU</span><input id="iv-search" type="search" placeholder="Buscar producto o SKU…" autocomplete="off"></label><label class="iv-select-label">Estado<select id="iv-filter"><option value="all">Todos</option><option value="low">Bajo mínimo o agotados</option><option value="out">Agotados</option></select></label></div>
+      <div class="iv-table-scroll"><table class="iv-table"><thead><tr><th>Producto / SKU</th><th>Existencias</th><th>Mínimo</th><th>Carro local</th><th>Estado</th><th>Acciones administrativas</th></tr></thead><tbody id="iv-products-rows"></tbody></table></div>
+      <div id="iv-products-empty" hidden class="iv-table-empty">No encontramos productos que coincidan con tu búsqueda.</div>
+      <p class="iv-panel-footnote">Una entrada suma existencias; una salida resta unidades físicas; un ajuste fija la cantidad total tras un conteo. Todas estas operaciones generan un registro en el historial.</p>
+    </section>
+    <section class="iv-panel" aria-labelledby="iv-history-heading">
+      <div class="iv-panel-top"><div><p class="ce-kicker">TRAZABILIDAD</p><h2 id="iv-history-heading">Historial de <em>movimientos</em></h2></div><span class="iv-caption" id="iv-movements-count">0 movimientos</span></div>
+      <div class="iv-table-scroll"><table class="iv-table iv-history-table"><thead><tr><th>Fecha / hora</th><th>Producto</th><th>Movimiento</th><th>Variación</th><th>Antes → Después</th><th>Motivo</th></tr></thead><tbody id="iv-history-rows"></tbody></table></div>
+      <p class="iv-panel-footnote">El historial pertenece a este navegador y no constituye un registro contable o de auditoría real. Con un backend podrá asociarse a usuarios y transacciones verificadas.</p>
+    </section>
+    <div class="iv-bottom-links"><a href="productos.html">← Volver al catálogo</a><a href="reportes.html">Ver reportes de ventas →</a></div>
+  </div>
+</main>
+<footer class="ce-simple-footer"><div class="ce-container ce-footer-row"><strong>CRAN ENSENADA</strong><span>Producto chileno · Inspirado en el sur de Chile</span><span>© <span id="year"></span> CRAN ENSENADA</span></div></footer>
+<dialog id="iv-dialog" class="ce-dialog iv-dialog" aria-labelledby="iv-dialog-title">
+ <div class="ce-dialog-top"><p class="ce-kicker">ADMINISTRACIÓN · STOCK</p><button type="button" id="iv-dialog-close" class="ce-dialog-x" aria-label="Cerrar">×</button></div>
+ <h2 id="iv-dialog-title">Registrar movimiento</h2><p><strong id="iv-dialog-product"></strong></p><p id="iv-dialog-current"></p>
+ <form id="iv-dialog-form" class="ce-form">
+  <div id="iv-movement-fields">
+   <label><span id="iv-movement-label">Cantidad de frascos</span><input id="iv-movement-qty" type="number" min="1" max="1000000" step="1" required></label>
+   <label>Motivo del movimiento<textarea id="iv-movement-reason" minlength="3" maxlength="160" placeholder="Ej.: Recepción de mercadería, venta presencial, merma o conteo físico" required></textarea></label>
+  </div>
+  <div id="iv-settings-fields" hidden>
+   <label>Stock mínimo para alertas<input id="iv-settings-min" type="number" min="0" max="1000000" step="1"></label>
+   <label>Código SKU del producto<input id="iv-settings-sku" type="text" maxlength="34" placeholder="CE-MER-450"></label>
+  </div>
+  <p class="iv-dialog-error" id="iv-dialog-error" hidden role="alert"></p>
+  <div class="ce-dialog-actions"><button class="ce-btn ce-btn-cream" id="iv-dialog-cancel" type="button">Cancelar</button><button class="ce-btn" type="submit">Guardar cambios</button></div>
+ </form>
+</dialog>
+<div role="status" aria-live="polite" class="ce-toast" id="ce-toast"></div>
+</body></html>
